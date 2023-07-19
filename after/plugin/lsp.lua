@@ -1,12 +1,14 @@
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
-
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
   'clangd',
 })
+
+require('lspconfig').rust_analyzer.setup({})
+require('lspconfig').clangd.setup({})
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
@@ -25,7 +27,7 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',
