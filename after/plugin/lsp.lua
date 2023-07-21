@@ -7,8 +7,9 @@ lsp.ensure_installed({
   'clangd',
 })
 
-require('lspconfig').rust_analyzer.setup({})
-require('lspconfig').clangd.setup({})
+local config = require('lspconfig')
+config.rust_analyzer.setup({})
+config.clangd.setup({})
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
