@@ -57,9 +57,7 @@ use {
         'nvim-tree/nvim-web-devicons', -- optional
     },
 }
-use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-  require("toggleterm").setup()
-end}
+use { 'NvChad/nvterm' }
 
 if packer_bootstrap then
     require('packer').sync()
