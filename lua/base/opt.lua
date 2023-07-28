@@ -2,6 +2,7 @@ local opt = vim.opt
 
 -- line numbers
 opt.nu = true
+opt.rnu = true -- relative line numbers
 
 -- indenting
 local indent_amount = 4
