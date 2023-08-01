@@ -5,7 +5,7 @@ lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
   'clangd',
-  'lua-language-server'
+  'lua_ls'
 })
 
 local config = require('lspconfig')
