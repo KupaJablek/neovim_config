@@ -21,7 +21,7 @@ opt.hlsearch = false
 opt.incsearch = true
 
 -- Sign column
-opt.signcolumn = "no"
+opt.signcolumn = "yes"
 
 -- net rw
 -- disable netrw at the very start of your init.lua

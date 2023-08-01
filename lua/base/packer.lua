@@ -15,7 +15,7 @@ local packer_bootstrap = ensure_packer()
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
@@ -72,6 +72,17 @@ return require('packer').startup(function(use)
 
     -- better nvim terminal
     use { 'NvChad/nvterm' }
+
+    -- DAP -> debugger
+    use {
+        "mfussenegger/nvim-dap",
+        "jay-babu/mason-nvim-dap.nvim"
+    }
+    -- DAP UI -> ui for DAP
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
+    -- gitsign icons
+    use 'lewis6991/gitsigns.nvim'
 
     if packer_bootstrap then
         require('packer').sync()
