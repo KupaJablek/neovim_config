@@ -1,5 +1,8 @@
-local api = require('nvim-tree.api')
+local status_ok, nvimtree = pcall(require, "nvim-tree")
+if not status_ok then
+    return
+end
 
-require'nvim-tree'.setup {}
+nvimtree.setup {}
 
 vim.keymap.set('n', '<leader>n', '<cmd> NvimTreeToggle <CR>', {})

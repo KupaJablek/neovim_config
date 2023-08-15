@@ -1,4 +1,9 @@
-require("nvterm").setup({
+local status_ok, nvterm = pcall(require, "nvterm")
+if not status_ok then
+    return
+end
+
+nvterm.setup({
   terminals = {
     shell = vim.o.shell,
     list = {},

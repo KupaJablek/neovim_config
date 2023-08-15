@@ -1,4 +1,7 @@
-local lsp = require("lsp-zero")
+local status_ok, lsp = pcall(require, "lsp-zero")
+if not status_ok then
+    return
+end
 
 lsp.preset("recommended")
 lsp.ensure_installed({
@@ -8,7 +11,11 @@ lsp.ensure_installed({
   'lua_ls'
 })
 
-local config = require('lspconfig')
+local config_ok, config = pcall(require, "lspconfig")
+if not config_ok then
+    return
+end
+
 config.rust_analyzer.setup({})
 config.clangd.setup({})
 
