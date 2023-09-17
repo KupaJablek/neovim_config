@@ -3,6 +3,8 @@ if not status_ok then
     return
 end
 
+telescope.setup{}
+
 local builtin = require('telescope.builtin')
-local themes = require('telescope.themes')
 vim.keymap.set('n', '<leader>sf', builtin.find_files, {})
+vim.keymap.set('n', '<leader>th', builtin.colorscheme, {})

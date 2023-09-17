@@ -26,7 +26,7 @@ packer.startup(function(use)
 
     -- fuzzy finder
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
+        'nvim-telescope/telescope.nvim', tag = '0.1.x',
         -- or                            , branch = '1.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
@@ -34,6 +34,7 @@ packer.startup(function(use)
     -- colours
     use { "ellisonleao/gruvbox.nvim", as = 'gruvbox' }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { 'projekt0n/caret.nvim', as = "caret"}
 
     -- syntax highlighting
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
