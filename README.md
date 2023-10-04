@@ -8,7 +8,7 @@
 
 3. [sharkdp/fd](https://github.com/sharkdp/fd)
 
-4. Nerdfont
+4. Terminal using a [Nerdfont](https://www.nerdfonts.com/)
 
 Potentially vim-gtk or similar
 
