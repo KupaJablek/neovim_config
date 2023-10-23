@@ -1,4 +1,5 @@
-# Maximus' Neovim config
+# My config
+My minimalist neovim configuration
 
 ## Requirements
 
