@@ -18,7 +18,7 @@ end
 
 config.rust_analyzer.setup({})
 config.clangd.setup({})
-
+config.fortls.setup({})
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
 
