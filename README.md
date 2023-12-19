@@ -1,6 +1,10 @@
 # My config
 My minimalist neovim configuration
 
+## Warning
+This configuration utilizes [packer.nvim](https://github.com/wbthomason/packer.nvim) for plugin management.\
+As of Aug, 2023, packer is an unmaintained project.
+
 ## Requirements
 
 1. [neovim](https://github.com/neovim/neovim) > v0.09.0
